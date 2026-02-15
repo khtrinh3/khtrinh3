@@ -8,205 +8,205 @@ Version: 1.1
 Description: Patient form for Glacier Medical.
 -->
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Kevin's Homework 1</title>
-    <link rel="stylesheet" href="homework1.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Kevin's Homework 1</title>
+        <link rel="stylesheet" href="homework1.css">
+    </head>
 <body>
     <div id="topdiv">
-    <header>
+        <header>
         <table cellpadding ="10" cellspacing="20">
         <tr>
         <td>
             <img src="medical.jpg" width="100" height="100">
         </td>
         <td>
-            <h1><b>Glacier Medical</b></h1>
+            <h1><b>Hoarfrost Medical</b></h1>
         </td>
         <td valign="bottom" align="right">
-            <span id="today"></span>
+        <span id="today"></span>
         </tr>
         </table>
-    </header>
+        </header>
     </div>
-    <div id="middiv">
-    <main>
-        <form action="completion.html">
+<div id="middiv">
+<main>
+    <form action="completion.html">
         <table cellpadding="5" cellspacing="5">
             <tr>
                 <th><h2>Account Registration<h/2></th>
             </tr>
             <!-- Name -->
             <tr>
-                <td><label for="firstname">First Name:</label></td>
-                <td><input 
-                        type="text" 
-                        id="firstname" 
-                        name="firstname" 
-                        required 
-                        placeholder="First Name" 
-                        pattern="[A-Za-z]{1,30}" 
-                        maxlength="30"
-                        minlength="2"></td>
-                <td><label for="middleinitial">Middle Initial:</label></td>
-                <td><input 
-                        type="text" 
-                        id="middleinitial" 
-                        name="middleinitial" 
-                        placeholder="M" 
-                        pattern="[A-Za-z]{1}" 
-                        maxlength="1"
-                        size="7"></td>
-                <td><label for="lastname">Last Name:</label></td>
-                <td><input 
-                        type="text" 
-                        id="lastname" 
-                        name="lastname" 
-                        required 
-                        placeholder="Last Name" 
-                        pattern="[A-Za-z]{1,30}" 
-                        maxlength="30"
-                        minlength="2"></td>
+            <td><label for="firstname">First Name:</label></td>
+            <td><input 
+            type="text" 
+            id="firstname" 
+            name="firstname" 
+            required 
+            placeholder="First Name" 
+            pattern="[A-Za-z]{1,30}" 
+            maxlength="30"
+            minlength="2"></td>
+            <td><label for="middleinitial">Middle Initial:</label></td>
+            <td><input 
+            type="text" 
+            id="middleinitial" 
+            name="middleinitial" 
+            placeholder="M" 
+            pattern="[A-Za-z]{1}" 
+            maxlength="1"
+            size="7"></td>
+            <td><label for="lastname">Last Name:</label></td>
+            <td><input 
+            type="text" 
+            id="lastname" 
+            name="lastname" 
+            required 
+            placeholder="Last Name" 
+            pattern="[A-Za-z]{1,30}" 
+            maxlength="30"
+            minlength="2"></td>
             </tr>
             <!-- Personal Info -->
             <tr>
-                <td><label for="phone">Mobile No.:</label></td>
-                <td><input 
-                        type="tel" 
-                        id="phone" 
-                        name="phone" 
-                        required 
-                        placeholder="(222) 222-2222" 
-                        pattern="[0-9]{10}" 
-                        inputmode="numeric" 
-                        maxlength="10"></td>
-                <td><label for="dob">Date of Birth:</label></td>
-                <td><input 
-                        type="date" 
-                        id="dob" 
-                        name="birthday"
-                        required></td>
-                <td><label for="ssn">Social Security #:</label></td>
-                <td><input 
-                        type="password" 
-                        id="ssn" name="ssn" 
-                        placeholder="222-22-2222" 
-                        pattern="[0-9]{9,11}" 
-                        inputmode="numeric" 
-                        minlength="9" 
-                        maxlength="11"
-                        required></td>
+            <td><label for="phone">Mobile No.:</label></td>
+            <td><input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                required 
+                placeholder="(222) 222-2222" 
+                pattern="[0-9]{10}" 
+                inputmode="numeric" 
+                maxlength="10"></td>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td><input 
+                type="date" 
+                id="dob" 
+                name="birthday"
+                required></td>
+            <td><label for="ssn">Social Security #:</label></td>
+            <td><input 
+                type="password" 
+                id="ssn" name="ssn" 
+                placeholder="222-22-2222" 
+                pattern="[0-9]{9,11}" 
+                inputmode="numeric" 
+                minlength="9" 
+                maxlength="11"
+                required></td>
             </tr>
             <!-- Address Lines/Email -->
             <tr>
-                <td><label for="add1">Address Line 1:</label></td>
-                <td><input 
-                        type="text" 
-                        id="add1" 
-                        name="add1" 
-                        minlength="4" 
-                        maxlength="30" 
-                        size="30" 
-                        required 
-                        placeholder="Address 1"></td>
-                <td><label for="add2">Address Line 2:</label></td>
-                <td><input 
-                        type="text" 
-                        id="add2" 
-                        name="add2" 
-                        minlength="4" 
-                        maxlength="30" 
-                        size="30" 
-                        placeholder="Address 2"></td>
-                <td><label for="email">Email:</label></td>
-                <td><input 
-                        type="email" 
-                        id="email" 
-                        name="email" 
-                        placeholder="name@domain.tld" 
-                        required></td>
+            <td><label for="add1">Address Line 1:</label></td>
+            <td><input 
+                type="text" 
+                id="add1" 
+                name="add1" 
+                minlength="4" 
+                maxlength="30" 
+                size="30" 
+                required 
+                placeholder="Address 1"></td>
+            <td><label for="add2">Address Line 2:</label></td>
+            <td><input 
+                type="text" 
+                id="add2" 
+                name="add2" 
+                minlength="4" 
+                maxlength="30" 
+                size="30" 
+                placeholder="Address 2"></td>
+            <td><label for="email">Email:</label></td>
+            <td><input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="name@domain.tld" 
+                required></td>
             </tr>
             <!-- City, State, Zip -->
             <tr>
-                <td><label for="city">City:</label></td>
-                <td><input 
-                        type="text" 
-                        id="city" 
-                        name="city"
-                        maxlength="30" 
-                        minlength="2"
-                        required 
-                        placeholder="City"></td>
-                <td><label for="state">State:</label></td>
-                <td>
-                    <select required>
-                        <option value="">State</option>
-                        <option value="AL">Alabama</option>
-                        <option value="AK">Alaska</option>
-                        <option value="AZ">Arizona</option>
-                        <option value="AR">Arkansas</option>
-                        <option value="CA">California</option>
-                        <option value="CO">Colorado</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="DE">Delaware</option>
-                        <option value="FL">Florida</option>
-                        <option value="GA">Georgia</option>
-                        <option value="HI">Hawaii</option>
-                        <option value="ID">Idaho</option>
-                        <option value="IL">Illinois</option>
-                        <option value="IN">Indiana</option>
-                        <option value="IA">Iowa</option>
-                        <option value="KS">Kansas</option>
-                        <option value="KY">Kentucky</option>
-                        <option value="LA">Louisiana</option>
-                        <option value="ME">Maine</option>
-                        <option value="MD">Maryland</option>
-                        <option value="MA">Massachusetts</option>
-                        <option value="MI">Michigan</option>
-                        <option value="MN">Minnesota</option>
-                        <option value="MS">Mississippi</option>
-                        <option value="MO">Missouri</option>
-                        <option value="MT">Montana</option>
-                        <option value="NE">Nebraska</option>
-                        <option value="NV">Nevada</option>
-                        <option value="NH">New Hampshire</option>
-                        <option value="NJ">New Jersey</option>
-                        <option value="NM">New Mexico</option>
-                        <option value="NY">New York</option>
-                        <option value="NC">North Carolina</option>
-                        <option value="ND">North Dakota</option>
-                        <option value="OH">Ohio</option>
-                        <option value="OK">Oklahoma</option>
-                        <option value="OR">Oregon</option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="RI">Rhode Island</option>
-                        <option value="SC">South Carolina</option>
-                        <option value="SD">South Dakota</option>
-                        <option value="TN">Tennessee</option>
-                        <option value="TX">Texas</option>
-                        <option value="UT">Utah</option>
-                        <option value="VT">Vermont</option>
-                        <option value="VA">Virginia</option>
-                        <option value="WA">Washington</option>
-                        <option value="WV">West Virginia</option>
-                        <option value="WI">Wisconsin</option>
-                        <option value="WY">Wyoming</option>
-                    </select></td>
+            <td><label for="city">City:</label></td>
+            <td><input 
+                type="text" 
+                id="city" 
+                name="city"
+                maxlength="30" 
+                minlength="2"
+                required 
+                placeholder="City"></td>
+            <td><label for="state">State:</label></td>
+            <td>
+                <select required>
+                    <option value="">State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select></td>
                 <td><label for="zip">Zip:</label></td>
                 <td><input 
-                        type="text" 
-                        id="zip" 
-                        name="zip" 
-                        placeholder="22222" 
-                        pattern="[0-9]{5,10}" 
-                        minlength="5"
-                        maxlength="10" 
-                        inputmode="numeric" 
-                        required></td>
-            </tr>
-            <!-- Radio Buttons -->
-            <tr>
+                    type="text" 
+                    id="zip" 
+                    name="zip" 
+                    placeholder="22222" 
+                    pattern="[0-9]{5,10}" 
+                    minlength="5"
+                    maxlength="10" 
+                    inputmode="numeric" 
+                    required></td>
+                </tr>
+                <!-- Radio Buttons -->
+                <tr>
                 <td><label>Sex:</label></td>
                 <td><input type="radio" id="Male" name="sex" value="Male" required>
                     <label for="Male">Male</label>
@@ -227,15 +227,15 @@ Description: Patient form for Glacier Medical.
                     <label for="insuranceYes">Yes</label>
                     <input type="radio" id="insuranceNo" name="insurance" value="No">
                     <label for="insuranceNo">No</label></td>
-            </tr>
-            <!-- Comments/Check Boxes/Sliders -->
-            <tr>
+                </tr>
+                <!-- Comments/Check Boxes/Sliders -->
+                <tr>
                 <td colspan="2">
-                <label for="comment">Describe your health:</label><br>
-                <textarea id="comment" name="comment" rows="5" cols="50" placeholder="Type your message here..."></textarea>
+                    <label for="comment">Describe your health:</label><br>
+                    <textarea id="comment" name="comment" rows="5" cols="50" placeholder="Type your message here..."></textarea>
                 </td>
                 <td colspan="2">
-                <label>Medical Conditions (check all that apply):</label><br>
+                    <label>Medical Conditions (check all that apply):</label><br>
                 <input 
                     type="checkbox" 
                     id="condition1" 
@@ -270,9 +270,9 @@ Description: Patient form for Glacier Medical.
                 <td><input type="range" id="health" name="health" min="1" max="10" required value="5">
                 <span id="healthValue">5</span>
                 </td>
-            </tr>
-            <!-- Account Creation -->
-            <tr>
+                </tr>
+                <!-- Account Creation -->
+                <tr>
                 <td>
                 <label for="username">User ID:</label></td>
                 <td><input
@@ -301,21 +301,21 @@ Description: Patient form for Glacier Medical.
                     maxlength="20"
                     minlength="6"
                     required></td>
-            </tr>
-            <!-- Completion -->
-            <tr>
+                </tr>
+                <!-- Completion -->
+                <tr>
                 <td><input type="reset" value="Reset">
                 <input type="submit" value="Submit"></td>
-            </tr>
+                </tr>
         </table>
-        </form>
-    </main>
-    </div>
-    <div id="botdiv">
+    </form>
+</main>
+</div>
+<div id="botdiv">
     <footer>
         <table cellpadding="5" cellspacing="5">
             <tr>
-                <td>ABC Medical</td>
+                <td>Hoarfrost Medical</td>
                 <td>PO BOX 12345</td>
                 <td>Houston TX, 77001</td>
                 <td><a href="foot.html">
@@ -324,9 +324,9 @@ Description: Patient form for Glacier Medical.
             </tr>
         </table>
     </footer>
-    </div>
+</div>
     <script>
-    document.getElementById("today").innerHTML = new Date().toLocaleDateString();
+        document.getElementById("today").innerHTML = new Date().toLocaleDateString();
     </script>
 </body>
 </html>

@@ -1,1 +1,28 @@
-
+body {
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, Arial, sans-serif;
+}
+#top {
+  background-color: lightblue;
+  text-align: center;
+  padding: 0px;
+  color: navy;
+}
+#middle {
+  background-color: white;
+  padding: 0px;
+}
+#bottom {
+  background-color: lightblue;
+  padding: 0px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: navy;
+}
+table {
+  margin-left: auto;
+  margine-right: auto;
+}

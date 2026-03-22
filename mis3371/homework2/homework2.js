@@ -1,4 +1,4 @@
- /*
+/*
 Program name: homework2.js
 Author: Kevin Hung Trinh
 Date created: 3/15/26

@@ -1,1 +1,45 @@
-
+/*
+Program name: patient-form.css
+Author: Kevin Hung Trinh
+Date created: 3/15/26
+Date last edited: 3/22/26
+Version: 1.2
+Description: Style sheet for patient form
+*/
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    font-family: Calibri, Arial, sans-serif;
+}
+#top {
+    background-color: lightblue;
+    text-align: center;
+    padding: 0px;
+    color: navy; 
+}
+#middle {
+    background-color: lightgray; 
+    padding: 0px;
+}
+#bottom {
+    background-color: lightblue;
+    padding: 0px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: navy; 
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+table.formoutput, tr.formoutput, td.formoutput {
+    border: 2px solid black;
+    width: 50%;
+    background-color:rgb(91, 190, 217);
+    color:rgb(222, 243, 245);
+}
+table.formoutput th {
+    border: 2px solid black;
+}

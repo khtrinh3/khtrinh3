@@ -3,7 +3,7 @@ Program name: homework2.js
 Author: Kevin Hung Trinh
 Date created: 3/15/26
 Date last edited: 3/22/26
-Version: 1.1
+Version: 1.2
 Description: Redisplay the form by table and check validity of some responses
 */
 

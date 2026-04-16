@@ -4,7 +4,7 @@ Author: Kevin Hung Trinh
 Date created: 4/1/26
 Date last edited: 4/15/26
 Version: 1.2
-Description: Redisplay the form by table and check validity of some responses
+Description: Redisplay the form by table and validate on the fly.
 */
 
 var error_flag = 0;

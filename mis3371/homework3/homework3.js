@@ -1,8 +1,8 @@
 /*
-Program name: homework2.js
+Program name: homework3.js
 Author: Kevin Hung Trinh
-Date created: 3/15/26
-Date last edited: 3/22/26
+Date created: 4/1/26
+Date last edited: 4/15/26
 Version: 1.2
 Description: Redisplay the form by table and check validity of some responses
 */

@@ -25,7 +25,6 @@ function checkfirstname() {
   else {
     document.getElementById("firstname_message").innerHTML = "Valid";
     document.getElementById("firstname_message").style.color = "green";
-    error_flag = 0;
   }
 }
 
@@ -34,12 +33,10 @@ function checkmiddleinitial() {
 
   if (x === "") {
     document.getElementById("middle_message").innerHTML = "";
-    error_flag = 0;
   } 
   else if (x.match(/[a-zA-Z ]/)) {
     document.getElementById("middle_message").innerHTML = "Valid";
     document.getElementById("middle_message").style.color = "green";
-    error_flag = 0;
   } 
   else {
     document.getElementById("middle_message").innerHTML = "Invalid";
@@ -59,7 +56,6 @@ function checklastname(){
         if (x.match(/^[a-zA-Z2-5'-]+$/)) {
             document.getElementById("lastname_message").innerHTML = "Valid";
             document.getElementById("lastname_message").style.color = "green";
-            error_flag = 0;
         }
         else  {
             document.getElementById("lastname_message").innerHTML = "Use only letters, apostrophes, numbers 2-5, or dashes.";
@@ -79,7 +75,6 @@ function checkPhone() {
     } else {
         document.getElementById("phone_message").innerHTML = "Valid";
         document.getElementById("phone_message").style.color = "green";
-        error_flag = 0;
     }
 }
 
@@ -110,7 +105,6 @@ function checkdob() {
     else {
         document.getElementById("birthday_message").innerHTML = "Valid";
         document.getElementById("birthday_message").style.color = "green";
-        error_flag = 0;
     }
 }
 
@@ -124,7 +118,6 @@ function checkSSN() {
     } else {
         document.getElementById("ssn_message").innerHTML = "Valid";
         document.getElementById("ssn_message").style.color = "green";
-        error_flag = 0;
     }
 }
 
@@ -138,7 +131,6 @@ function checkEmail() {
     } else {
         document.getElementById("email_message").innerHTML = "Valid";
         document.getElementById("email_message").style.color = "green";
-        error_flag = 0;
     }
 }
 
@@ -170,7 +162,6 @@ function checkUsername() {
         document.getElementById("username").value = lowerUsername;
         document.getElementById("username_message").innerHTML = "Valid";
         document.getElementById("username_message").style.color = "green";
-        error_flag = 0;
     }
 }
 
@@ -205,7 +196,6 @@ function checkPassword() {
   else {
     document.getElementById("password_message").innerHTML = "Valid";
     document.getElementById("password_message").style.color = "green";
-    error_flag = 0;
   }
 }
 
@@ -216,7 +206,6 @@ function checkConfirmPassword() {
     if (x === y) {
         document.getElementById("confirmError").innerHTML = "Valid";
         document.getElementById("confirmError").style.color = "green";
-        error_flag = 0;
     } else {
         document.getElementById("confirmError").innerHTML = "Passwords do not match";
         document.getElementById("confirmError").style.color = "red";

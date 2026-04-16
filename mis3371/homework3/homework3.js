@@ -268,9 +268,9 @@ function checkform() {
 
     if (error_flag == 1) {
         alert("Please fix the indicated errors!");
-        document.getElementById("submit").disabled = true;
+        document.getElementById("Submit").disabled = true;
     } else {
-        document.getElementById("submit").disabled = false;
+        document.getElementById("Submit").disabled = false;
     }
 }
 

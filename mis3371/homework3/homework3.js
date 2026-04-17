@@ -278,6 +278,7 @@ function checkform() {
     checkPhone();
     checkdob();
     checkSSN();
+    checkAddress1();
     checkEmail();
     checkUsername();
     checkPassword();

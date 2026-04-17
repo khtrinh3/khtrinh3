@@ -129,7 +129,9 @@ Description: Patient form for medical.
                         maxlength="30" 
                         size="30" 
                         required 
-                        placeholder="Address 1"></td>
+                        placeholder="Address 1"
+                        oninput="checkAddress1()"
+                        onblur="checkAddress1()"></td>
                 <td><label for="add2">Address Line 2:</label></td>
                 <td><input 
                         type="text" 

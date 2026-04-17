@@ -125,18 +125,18 @@ function checkAddress1() {
     let x = document.getElementById("add1").value;
 
     if (x.length < 2) {
-        document.getElementById("add1_message").innerHTML = "Address too short (min 2 characters).";
-        document.getElementById("add1_message").style.color = "red";
+        document.getElementById("address1_message").innerHTML = "Address too short (min 2 characters).";
+        document.getElementById("address1_message").style.color = "red";
         error_flag = 1;
     }
     else if (x.length > 30) {
-        document.getElementById("add1_message").innerHTML = "Address too long (max 30 characters).";
-        document.getElementById("add1_message").style.color = "red";
+        document.getElementById("address1_message").innerHTML = "Address too long (max 30 characters).";
+        document.getElementById("address1_message").style.color = "red";
         error_flag = 1;
     }
     else {
-        document.getElementById("add1_message").innerHTML = "Valid";
-        document.getElementById("add1_message").style.color = "green";
+        document.getElementById("address1_message").innerHTML = "Valid";
+        document.getElementById("address1_message").style.color = "green";
     }
 }
 

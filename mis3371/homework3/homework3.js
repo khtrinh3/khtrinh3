@@ -268,7 +268,6 @@ function checkform() {
 
     if (error_flag == 1) {
         alert("Please fix the indicated errors!");
-        document.getElementById("Submit").disabled = true;
     } else {
         document.getElementById("Submit").disabled = false;
     }

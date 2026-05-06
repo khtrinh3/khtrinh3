@@ -154,6 +154,13 @@ function checkEmail() {
     }
 }
 
+async function getStates(file) {
+    let myObject = await fetch(file);
+    let myText = await myObject.text();
+
+    document.getElementById("state").innerHTML = myText;
+}
+
 function updateHealthValue() {
   let value = document.getElementById("health").value;
   document.getElementById("health_value").textContent = value;

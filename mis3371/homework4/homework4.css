@@ -28,6 +28,7 @@ body {
 #middle {
     background-color: lightgray; 
     padding: 0px;
+    min-height: 600px;
 }
 #bottom {
     position: fixed;

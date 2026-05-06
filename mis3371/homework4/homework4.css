@@ -29,12 +29,16 @@ body {
     padding: 0px;
 }
 #bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: lightblue;
     padding: 0px;
     text-align: center;
     font-family: "Times New Roman", Times, serif;
     font-size: 16px;
-    color: navy; 
+    color: navy;
 }
 table {
     margin-left: auto;

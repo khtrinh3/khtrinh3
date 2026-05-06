@@ -8,6 +8,7 @@ Description: Style sheet for patient form
 */
 header {
   text-align: center;
+  color: navy;
 }
 header table {
   margin: 0 auto;

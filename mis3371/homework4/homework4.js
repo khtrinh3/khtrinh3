@@ -1,5 +1,5 @@
 /*
-Program name: homework3.js
+Program name: homework4.js
 Author: Kevin Hung Trinh
 Date created: 5/1/26
 Date last edited: 5/1/26

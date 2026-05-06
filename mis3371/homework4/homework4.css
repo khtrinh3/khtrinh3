@@ -56,9 +56,6 @@ table.formoutput th {
     border: 2px solid black;
 }
 #contact {
-    width: 400px;
-    margin: 80px auto;
     text-align: center;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
+}
+

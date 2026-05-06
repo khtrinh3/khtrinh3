@@ -25,6 +25,7 @@ function checkfirstname() {
   else {
     document.getElementById("firstname_message").innerHTML = "Valid";
     document.getElementById("firstname_message").style.color = "green";
+    setCookie("fname", x, 1);
   }
 }
 
@@ -290,6 +291,45 @@ function checkform() {
         alert("Please fix the indicated errors!");
     } else {
         document.getElementById("Submit").disabled = false;
+    }
+}
+
+function setCookie(cname, cvalue, exdays){
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname){
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+  let c = ca[i];
+  while (c.charAt(0) == ' ') {
+  c = c.substring(1);
+  }
+  if (c.indexOf(name) == 0) {
+  return c.substring(name.length, c.length);
+  }
+}
+  return "";
+}
+
+function checkCookie(){
+    let message;
+    let fname = getCookie("fname");
+    if (fname != "") 
+    {
+      message = "Welcome back "+ fname + ".\nPress OK to confirm or Cancel if this isn't "+fname+".";
+      if (confirm(message)) 
+    {
+      document.getElementById("firstname").setAttribute('value',fname);
+    }
+      else
+        {
+          setCookie("fname", "" , 0);  
+        } 
     }
 }
 

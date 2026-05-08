@@ -350,4 +350,28 @@ function checkCookie(){
     }
 }
 
+function loadStoredData() {
+
+    let firstname = localStorage.getItem("firstname");
+    let middleinitial = localStorage.getItem("middleinitial");
+    let lastname = localStorage.getItem("lastname");
+    let phone = localStorage.getItem("phone");
+    let add1 = localStorage.getItem("add1");
+
+    if (firstname) {
+        document.getElementById("firstname").value = firstname;
+    }
+    if (middleinitial) {
+        document.getElementById("middleinitial").value = middleinitial;
+    }
+    if (lastname) {
+        document.getElementById("lastname").value = lastname;
+    }
+    if (phone) {
+        document.getElementById("phone").value = phone;
+    }
+    if (add1) {
+        document.getElementById("add1").value = add1;
+    }
+}
 

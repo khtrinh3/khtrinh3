@@ -345,7 +345,12 @@ function checkCookie(){
     }
       else
         {
-          setCookie("fname", "" , 0);  
+          setCookie("fname", "" , 0);
+          localStorage.removeItem("firstname");
+          localStorage.removeItem("middleinitial");
+          localStorage.removeItem("lastname");
+          localStorage.removeItem("phone");
+          localStorage.removeItem("add1");
         } 
     }
 }

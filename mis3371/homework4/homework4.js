@@ -40,6 +40,8 @@ function checkmiddleinitial() {
   else if (x.match(/[a-zA-Z ]/)) {
     document.getElementById("middle_message").innerHTML = "Valid";
     document.getElementById("middle_message").style.color = "green";
+
+    localStorage.setItem("middleinitial", x);
   } 
   else {
     document.getElementById("middle_message").innerHTML = "Invalid";
@@ -59,6 +61,8 @@ function checklastname(){
         if (x.match(/^[a-zA-Z2-5'-]+$/)) {
             document.getElementById("lastname_message").innerHTML = "Valid";
             document.getElementById("lastname_message").style.color = "green";
+
+            localStorage.setItem("lastname", x);
         }
         else  {
             document.getElementById("lastname_message").innerHTML = "Use only letters, apostrophes, numbers 2-5, or dashes.";
@@ -78,6 +82,8 @@ function checkPhone() {
     } else {
         document.getElementById("phone_message").innerHTML = "Valid";
         document.getElementById("phone_message").style.color = "green";
+
+        localStorage.setItem("phone", phone);
     }
 }
 
@@ -140,6 +146,8 @@ function checkAddress1() {
     else {
         document.getElementById("address1_message").innerHTML = "Valid";
         document.getElementById("address1_message").style.color = "green";
+
+        localStorage.setItem("add1", x);
     }
 }
 

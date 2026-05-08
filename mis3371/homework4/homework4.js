@@ -26,6 +26,8 @@ function checkfirstname() {
     document.getElementById("firstname_message").innerHTML = "Valid";
     document.getElementById("firstname_message").style.color = "green";
     setCookie("fname", x, 1);
+    
+    localStorage.setItem("firstname", x);
   }
 }
 
